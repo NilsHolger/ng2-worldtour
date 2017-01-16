@@ -1,0 +1,13 @@
+<div *ngIf="hero">
+     <div class="card red lighten-1">
+       <div class="card-content white-text">
+  <span class="card-title">{{hero.name}} details!</span>
+    <div>id: {{hero.id}}</div>
+        <div>
+            <input [(ngModel)]="hero.name" placeholder="name">
+        </div>
+         <a class="btn-floating btn-large waves-effect waves-light red" (click)="goBack()">
+             <i class="material-icons">android</i></a>
+        </div>
+    </div>
+</div>

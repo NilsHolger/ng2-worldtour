@@ -1,0 +1,27 @@
+<div class="section no-pad-bot" id="index-banner">
+   <div class="container">
+      <h1 class="header center red-text lighten-1">Top Heroes</h1>
+    <div class="row" *ngFor="let hero of heroes">
+    <div class="col s12 m12">
+    <div class="card horizontal">
+    <a class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="assets/diablo13.jpg">
+    </a>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">
+            {{ hero.name }}
+          <i class="material-icons right">more_vert</i></span>
+      <p><a href="https://angular.io/docs/ts/latest/tutorial/" target="_blank">we are open source: fearless, ruthless, honest. goal is progress.</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">{{hero.name}}<i class="material-icons right">close</i></span>
+      <p> produce quality software as fast as possible. iterative. get involved. contribute in our angular repositories. more information about us in the angular documentation. e2e.</p>
+    </div>
+  </div>
+</div>
+</div>
+<a (click)="goBack()" class="btn-floating btn-large waves-effect waves-light red lighten-1">
+    <i class="material-icons">security</i></a>
+    <h3 class="center red-text lighten-1">we are on fire ...</h3>
+ </div>
+</div>
