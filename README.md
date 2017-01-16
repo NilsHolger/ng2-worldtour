@@ -1,6 +1,7 @@
 # Ng2Toa2
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
+ubuntu is the belief in a universal bond that connects all of humanity. it's free: https://www.ubuntu.com/download/desktop. zorin os 12 ultimate (view to a kill): https://zorinos.com/download/. kill them with kindness and softly.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
