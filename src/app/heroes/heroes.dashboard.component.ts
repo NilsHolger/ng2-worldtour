@@ -15,7 +15,7 @@ export class HeroesDashboardComponent implements OnInit {
   constructor(private heroService: HeroService, private location: Location){}
 
   ngOnInit(){
-    this.heroService.getHeroes().then(heroes => this.heroes = heroes.slice(0, 4));
+    this.heroService.getHeroes().then(heroes => this.heroes = heroes.slice(0, 5));
   }
   goBack(): void {
     this.location.back();

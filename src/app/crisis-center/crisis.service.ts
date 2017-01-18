@@ -5,13 +5,13 @@ export class Crisis {
 }
 
 const CRISIS = [
-new Crisis(1, 'Linux, Androids, Chromebooks are not present in the desktop market'),
-new Crisis(2, 'Worlwide enterprises are flooded with closed source software'),
-new Crisis(3, 'The Open Source Code on Github is stolen and sold to companies'),
-new Crisis(4, 'Closed source browsers are not implementing the specifications'),
-new Crisis(5, 'Masses manipulated by mass media to fall into closed source trap'),
-new Crisis(6, 'Closed source blocking installation and useage of Open Source Software'),
-new Crisis(7, 'Open Source\'s reputation harmed, it is full of errors and no support')
+new Crisis(1, 'Linux, Androids, Chromebooks are not present in the desktop market.'),
+new Crisis(2, 'Worlwide enterprises are flooded with closed source software.'),
+new Crisis(3, 'The Open Source Code on Github is stolen and sold to companies.'),
+new Crisis(4, 'Closed source browsers are not implementing the specifications.'),
+new Crisis(5, 'Masses manipulated by mass media to fall into closed source trap.'),
+new Crisis(6, 'Closed source blocking installation and useage of Open Source Software.'),
+new Crisis(7, 'Open Source\'s reputation harmed, it is full of errors and no support.')
 ];
 
 let crisesPromise = Promise.resolve(CRISIS);

@@ -8,8 +8,17 @@
               <ul>
                 <li *ngFor="let hero of heroes" (click)="onSelect(hero)"
                 class="waves-effect waves-light">
-                  <div>{{hero.name}}</div></li>
+                  <div>{{hero.name}} <span (click)="delete(hero); $event.stopPropagation();"
+                     class="new badge blue">rXazre</span>
+                  </div>
+                </li>
               </ul>
+              <div>
+                   Hero name: <input #heroName>
+                   <a class="btn-floating btn-large waves-effect waves-light red"
+                   (click)="add(heroName.value); heroName.value=''">
+                     <i class="material-icons">add</i></a>
+              </div>
               <!--<div *ngIf="selectedHero">
                     <h3>
                         {{selectedHero.name | uppercase}} is the hero
