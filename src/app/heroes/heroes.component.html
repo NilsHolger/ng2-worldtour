@@ -8,8 +8,15 @@
               <ul>
                 <li *ngFor="let hero of heroes" (click)="onSelect(hero)"
                 class="waves-effect waves-light">
-                  <div>{{hero.id}} {{hero.name}}</div></li>
+                  <div>{{hero.name}}</div></li>
               </ul>
+              <!--<div *ngIf="selectedHero">
+                    <h3>
+                        {{selectedHero.name | uppercase}} is the hero
+                    </h3>
+                    <a class="btn-floating btn-large waves-effect waves-light-red"
+                    (click)="gotoDetails()"><i class="material-icons">polymer</a>
+              </div>-->
           <app-heroes-detail [hero]="selectedHero"></app-heroes-detail>
            </div>
          </div>
