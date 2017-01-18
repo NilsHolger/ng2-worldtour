@@ -13,6 +13,7 @@ import { AppHeroesComponent } from './heroes.app.component';
 import { HeroesComponent } from './heroes.component';
 import { HeroesDetailComponent } from './heroes.detail.component';
 import { HeroesDashboardComponent } from './heroes.dashboard.component';
+import { HeroSearchComponent } from './hero.search.component';
 import { HeroService } from './hero.service';
 
 
@@ -20,7 +21,7 @@ import { HeroService } from './hero.service';
   imports: [ CommonModule, FormsModule, HttpModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService), HeroesRoutingModule ],
   declarations: [ AppHeroesComponent, HeroesComponent, HeroesDetailComponent,
-    HeroesDashboardComponent ],
+    HeroesDashboardComponent, HeroSearchComponent ],
   providers: [ HeroService ]
 })
 export class HeroesModule { }
