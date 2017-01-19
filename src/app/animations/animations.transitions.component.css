@@ -1,0 +1,33 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: block;
+  width: 120px;
+  line-height: 50px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  background-color: #ee6e73;
+  border-radius: 4px;
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.active {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+.inactive {
+  background-color: #ee6e73;
+  transform: scale(1);
+}
+
+.auto-size {
+  line-height: 105px !important;
+  height: 100px;
+  width: 200px;
+}

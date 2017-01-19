@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 
 //feature modules
 import { HeroesModule } from './heroes/heroes.module';
+import { AnimationsModule } from './animations/animations.module';
 
 //import { HeroesComponent } from './heroes/heroes.component';
 //import { HeroesDetailComponent } from './heroes/heroes.detail.component';
@@ -29,6 +30,7 @@ import { HeroesModule } from './heroes/heroes.module';
     FormsModule,
     HttpModule,
     HeroesModule,
+    AnimationsModule,
     AppRoutingModule
   ],
   providers: [],

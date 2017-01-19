@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-heroes-app',
+  selector: 'my-heroes',
   template: `
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
