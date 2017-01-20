@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppAnimationsComponent } from './animations.app.component';
-import { TransitionsComponent } from './animations.transitions.component';
+//import { TransitionsComponent } from './animations.transitions.component';
 import { TransitionsHostComponent } from './animations.transitions-host.component';
-import { TransitionsTwoWayComponent } from './animations.transitionstwoway.component';
+import { TransitionsEnterLeaveHostComponent } from './animations.transitionsenterleave-host.component';
 
 @NgModule({
   imports: [RouterModule.forChild([
@@ -11,7 +11,7 @@ import { TransitionsTwoWayComponent } from './animations.transitionstwoway.compo
     { path: 'animations', component: AppAnimationsComponent,
     children: [
       {path: 'transitions', component: TransitionsHostComponent },
-      {path: 'transitionstwoway', component: TransitionsTwoWayComponent}
+      {path: 'transitionsenterleave', component: TransitionsEnterLeaveHostComponent}
     ]
   }
 ])],

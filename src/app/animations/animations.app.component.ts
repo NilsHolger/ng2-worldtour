@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
                 <nav>
                   <a class="waves-effect waves-light btn"
                   routerLink="/animations/transitions" routerLinkActive="active">Transitions</a>
-                  <a class="waves-effect waves-light btn" routerLink="/animations/transitionstwoway" routerLinkActive="active">TransitionsTwoWay</a>
+                  <a class="waves-effect waves-light btn" routerLink="/animations/transitionsenterleave" routerLinkActive="active">TransitionsEnterLeave</a>
                   <!--<a class="waves-effect waves-light btn" routerLink="/animations/transitionsenterleave" routerLinkActive="active">TransitionsEnterLeave</a>
                   <a class="waves-effect waves-light btn" routerLink="/animations/transitionsenterleavestate" routerLinkActive="active">TransitionsEnterLeaveState</a>
                   <a class="waves-effect waves-light btn" routerLink="/animations/transitionsauto" routerLinkActive="active">TransitionsAuto</a>
