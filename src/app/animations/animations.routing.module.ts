@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppAnimationsComponent } from './animations.app.component';
-//import { TransitionsComponent } from './animations.transitions.component';
 import { TransitionsHostComponent } from './animations.transitions-host.component';
 import { TransitionsEnterLeaveHostComponent } from './animations.transitionsenterleave-host.component';
 

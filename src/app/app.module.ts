@@ -13,17 +13,15 @@ import { FooterComponent } from './footer/footer.component';
 //feature modules
 import { HeroesModule } from './heroes/heroes.module';
 import { AnimationsModule } from './animations/animations.module';
+import { HeroFormModule } from './forms/heroform.module';
 
-//import { HeroesComponent } from './heroes/heroes.component';
-//import { HeroesDetailComponent } from './heroes/heroes.detail.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent
-    //HeroesComponent,
-    //HeroesDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +29,7 @@ import { AnimationsModule } from './animations/animations.module';
     HttpModule,
     HeroesModule,
     AnimationsModule,
+    HeroFormModule,
     AppRoutingModule
   ],
   providers: [],

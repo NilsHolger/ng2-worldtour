@@ -1,0 +1,36 @@
+<div class="container">
+
+  <h1>Hero Form 1(template)</h1>
+  <div class="row">
+    <form class="col s12">
+      {{diagnostic}}
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="name" type="text" class="validate"
+          [(ngModel)]="model.name" name="name">
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">cached</i>
+          <input id="alterEgo" type="text" [(ngModel)]="model.alterEgo" name="alterEgo">
+          <label for="alterEgo">Alter Ego</label>
+        </div>
+      </div>
+      <div class="input-field col s6">
+          <i class="material-icons prefix">settings_power</i>
+        <select [(ngModel)]="model.power" name="power" id="power">
+          <option value="" disabled selected>choose your option</option>
+          <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+        </select>
+        <label>Hero Power</label>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <button class="waves-effect waves-light btn" type="submit"
+            ><i class="material-icons left">send</i>Submit</button>
+          </div>
+        </div>
+    </form>
+  </div>
+</div>
