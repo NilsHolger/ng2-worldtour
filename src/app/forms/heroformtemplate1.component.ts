@@ -8,10 +8,11 @@ import { Hero } from './hero';
   templateUrl: './heroformtemplate1.component.html'
 })
 export class HeroFormTemplate1Component {
+    title = 'Hero Form 1(template)';
 
     powers = ['Really Smart', 'Top Killer', 'Super Flexible', 'Sexy Body', 'Game Changer'];
 
-    model = new Hero(1, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
+    model = new Hero(3, 'Nils', this.powers[1], 'Flashlight');
 
     submitted = false;
 
