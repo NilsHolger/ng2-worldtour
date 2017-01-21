@@ -12,11 +12,16 @@ export class HeroFormTemplate1Component {
 
     powers = ['Really Smart', 'Top Killer', 'Super Flexible', 'Sexy Body', 'Game Changer'];
 
-    model = new Hero(3, 'Nils', this.powers[1], 'Flashlight');
+    model = new Hero(3, 'Dr. IQ', this.powers[0], 'Chuck Overstreet');
 
     submitted = false;
 
     onSubmit() { this.submitted = true;}
+
+    newHero() {
+      this.model = new Hero(42, '', '');
+      this.submitted = false;
+    }
 
     get diagnostic() { return JSON.stringify(this.model); }
 

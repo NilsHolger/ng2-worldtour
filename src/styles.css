@@ -1,0 +1,6 @@
+input[type=text].ng-dirty {
+  border-bottom: 2px solid #ee6e73 !important;
+}
+input[type=text].valid {
+  border-bottom: 2px solid #4CAF50 !important;
+}
