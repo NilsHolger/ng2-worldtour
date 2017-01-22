@@ -12,7 +12,7 @@ export class HeroFormTemplate1Component {
 
     powers = ['Really Smart', 'Top Killer', 'Super Flexible', 'Sexy Body', 'Game Changer'];
 
-    model = new Hero(3, 'Dr. IQ', this.powers[0], 'Chuck Overstreet');
+    model = new Hero(3, 'Mick', this.powers[2], 'Flash Light');
 
     submitted = false;
 

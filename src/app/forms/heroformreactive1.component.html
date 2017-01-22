@@ -1,0 +1,44 @@
+<div class="container">
+  <h1 class="header center red-text lighten-1">{{title}}</h1>
+  <div class="row">
+    <form class="col s12" [formGroup]="heroForm" *ngIf="active" (ngSubmit)="onSubmit()" >
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="name" type="text" formControlName="name" required>
+        </div>
+        <div class="card-panel red lighten-1" *ngIf="formErrors.name">
+            {{formErrors.name}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="alterEgo" type="text" formControlName="alterEgo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <i class="material-icons prefix">power_settings_new</i>
+          <label for="power"> Hero Power</label>
+        <select name="power" id="power" formControlName="power">
+          <option value="" disabled selected>choose your option</option>
+          <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+        </select>
+        </div>
+        <div class="card-panel red lighten-1" *ngIf="formErrors.power">
+              {{formErrors.power}}
+        </div>
+      </div>
+      <div class="row">
+          <div class="col s12">
+            <button type="submit" [disabled]="!heroForm.valid"
+            class="btn-floating btn-large waves-effect waves-light red">
+              <i class="material-icons">pregnant_woman</i></button>
+            <button type="button" (click)="addHero()"
+            class="btn-floating btn-large waves-effect waves-light red">
+              <i class="material-icons">add</i></button>
+          </div>
+      </div>
+    </form>
+  </div>
+   <hero-submitted [hero]="hero" [(submitted)]="submitted"></hero-submitted>
+</div>
