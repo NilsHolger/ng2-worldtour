@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { HeroData} from './hero.data';
+import { requestOptionsProvider } from './default.request.options.service';
+
 import { AppRoutingModule } from './app.routing.module';
 import './rxjs-extensions';
 
@@ -14,8 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeroesModule } from './heroes/heroes.module';
 import { AnimationsModule } from './animations/animations.module';
 import { HeroFormModule } from './forms/heroform.module';
-
-
+import { HeroHttpModule } from './http/herohttp.module';
 
 @NgModule({
   declarations: [
@@ -27,12 +30,14 @@ import { HeroFormModule } from './forms/heroform.module';
     BrowserModule,
     FormsModule,
     HttpModule,
+    InMemoryWebApiModule.forRoot(HeroData),
     HeroesModule,
     AnimationsModule,
     HeroFormModule,
+    HeroHttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [requestOptionsProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

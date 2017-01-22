@@ -1,0 +1,10 @@
+{
+  "data": [
+    { "id": 1, "name": "Wonderwoman"},
+    { "id": 2, "name": "Mr. Knife"},
+    { "id": 3, "name": "Flash"},
+    { "id": 4, "name": "Warlord"},
+    { "id": 5, "name": "Blitzkrieg"},
+    { "id": 6, "name": "Diabolo"}
+  ]
+}
