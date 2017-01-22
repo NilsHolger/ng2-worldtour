@@ -9,7 +9,7 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class HeroesService {
-  private heroesUrl = 'app/heroes';
+  private heroesUrl = 'app/heroes.json';
 
   constructor(private http: Http) {}
 

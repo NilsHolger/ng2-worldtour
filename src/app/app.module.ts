@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { HeroData} from './hero.data';
+import { HeroData } from './hero.data';
 import { requestOptionsProvider } from './default.request.options.service';
 
 import { AppRoutingModule } from './app.routing.module';

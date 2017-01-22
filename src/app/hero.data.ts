@@ -12,3 +12,18 @@ export class HeroData implements InMemoryDbService {
     return { heroes };
   }
 }
+
+export class TechnologyData implements InMemoryDbService {
+  createDb() {
+    let technologies = [
+      { id: 1, name: 'Angular 1'},
+      { id: 2, name: 'Angular 2'},
+      { id: 3, name: 'Angular CLI'},
+      { id: 4, name: 'Material Design'},
+      { id: 5, name: 'Ionic'},
+      { id: 6, name: 'Firebase'},
+      { id: 7, name: 'Google Cloud'}
+    ];
+    return { technologies };
+  }
+}
