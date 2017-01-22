@@ -8,10 +8,12 @@ import { HeroHttpRoutingModule } from './herohttp.routing.module';
 import { HeroHttpHostComponent } from './herohttp.host.component';
 import { HeroListComponent } from './herolist.component';
 import { TechnologyListPromiseComponent } from './technologylist.component';
+import { WikipediaComponent } from '../wikipedia/wiki.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, HeroHttpRoutingModule, HttpModule,
      JsonpModule],
-  declarations: [ HeroHttpHostComponent, HeroListComponent, TechnologyListPromiseComponent ]
+  declarations: [ HeroHttpHostComponent, HeroListComponent,
+                  TechnologyListPromiseComponent, WikipediaComponent ]
 })
 export class HeroHttpModule {}

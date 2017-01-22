@@ -1,0 +1,17 @@
+<div class="container">
+  <h1 class="header center red-text lighten-1">{{title}}</h1>
+  <div class="row">
+    <div class="col s6">
+<p class="red-text"><i>{{fetches}}</i></p>
+
+<input class="red-text" #term (keyup)="search(term.value)"/>
+
+<ul>
+  <li *ngFor="let item of items | async" class="red-text">
+          {{item}}
+  </li>
+</ul>
+
+</div>
+</div>
+</div>
