@@ -19,6 +19,7 @@ import { HeroesModule } from './heroes/heroes.module';
 import { AnimationsModule } from './animations/animations.module';
 import { HeroFormModule } from './forms/heroform.module';
 import { HeroHttpModule } from './http/herohttp.module';
+import { LifecycleHooksModule } from './lifecyclehooks/lifecyclehooks.module';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { HeroHttpModule } from './http/herohttp.module';
     AnimationsModule,
     HeroFormModule,
     HeroHttpModule,
+    LifecycleHooksModule,
     AppRoutingModule
   ],
   providers: [requestOptionsProvider],
