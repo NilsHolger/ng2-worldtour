@@ -1,0 +1,14 @@
+<div class="parent">
+  <h2>Spy Directive in Thievery</h2>
+      <input [(ngModel)]="newName" (keyup.enter)="addCandidate()">
+      <button class="redbtn" (click)="addCandidate()">Add Candidate</button>
+      <button class="redbtn" (click)="reset()">Reset</button>
+      <p></p>
+      <div *ngFor="let candidate of candidates" mySpy class="candidates">
+            {{candidate}}
+      </div>
+      <h4>--- Spy Lifecycle Hook Log ---</h4>
+      <div *ngFor="let msg of spyLog">
+            {{ msg }}
+      </div>
+</div>

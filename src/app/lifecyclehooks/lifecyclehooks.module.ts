@@ -8,9 +8,13 @@ import { LifecycleHooksHostComponent } from './lifecyclehookshost.component';
 import { PeekABooParentComponent } from './peekaboo.parent.component';
 import { PeekABooComponent } from './peekaboo.component';
 
+import { SpyParentComponent } from './spy.component';
+import { SpyDirective } from './spy.directive';
+
 
 @NgModule({
   imports: [CommonModule, FormsModule, LifecycleHooksRoutingModule],
-  declarations: [LifecycleHooksHostComponent, PeekABooParentComponent, PeekABooComponent]
+  declarations: [LifecycleHooksHostComponent, PeekABooParentComponent,
+    PeekABooComponent, SpyParentComponent, SpyDirective]
 })
 export class LifecycleHooksModule {}
