@@ -1,0 +1,23 @@
+<div class="parent">
+    <h4>{{title}}</h4>
+    <table>
+      <tr>
+        <td>
+            Hero.Name:
+        </td>
+        <td>
+             <input [(ngModel)]="hero.name">
+        </td>
+      </tr>
+      <tr>
+        <td>
+              Power:
+        </td>
+        <td>
+              <input [(ngModel)]="power">
+        </td>
+      </tr>
+    </table>
+    <p><button class="redbtn" (click)="reset()">Reset Log</button></p>
+    <on-changes [hero]="hero" [power]="power"></on-changes>
+</div>
