@@ -14,6 +14,7 @@ import { Hero } from './hero';
 export class HeroSearchComponent implements OnInit {
       heroes: Observable<Hero[]>;
       private searchTerms = new Subject<string>();
+      show = true;
       constructor(private heroSearchService: HeroSearchService, private router: Router){ }
 
       //push a search term into the observable stream
@@ -38,6 +39,7 @@ export class HeroSearchComponent implements OnInit {
       }
 
       gotoDetail(hero: Hero): void {
+        this.show = false;
         let link = ['/heroes/heroeslist'];
         this.router.navigate(link);
       }
